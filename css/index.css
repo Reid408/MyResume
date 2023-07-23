@@ -106,7 +106,53 @@ nav ul li a:hover {
 /* -------------------Last Work---------------------- */
 .last-Work {
   background-color: #e6e6e6;
+  padding: 60px;
+  text-align: center;
+}
+
+.work-content {
+  width: 100%;
   padding: 40px;
+}
+.work-content-card {
+  width: 20%;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+}
+
+.card-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 5%;
+}
+
+/* 工作經歷 */
+.d-style {
+  color: black !important;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-padding {
+  padding: 60px;
 }
 
 /*--------------- 通用屬性 --------------------------------*/
@@ -123,4 +169,22 @@ ul {
 a {
   text-decoration: none;
   color: #454545;
+}
+
+/*--------------- 手機 --------------------------------*/
+
+@media (max-width: 1000px) {
+  .work-content {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+  }
+  .work-content-card {
+    width: 40%;
+    display: inline-block;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+  }
 }
