@@ -12,7 +12,7 @@ html {
   box-sizing: inherit;
 }
 
-/* header */
+/* -------------------header---------------------- */
 .header {
   width: 100%;
 }
@@ -72,8 +72,44 @@ nav ul li a:hover {
   background-color: #e7e7e7;
   border-bottom: 1px solid #454545;
 }
+/* -------------------main---------------------- */
+/* -------------------about---------------------- */
+.about {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  margin: 5%;
+}
 
-/* 通用屬性 */
+.about div {
+  flex: 1;
+}
+
+.about-Right h1 {
+  padding: 0 0 20px 0;
+  margin-top: 0;
+}
+
+.about-Left {
+  padding: 10px;
+}
+
+.about-Left div {
+  background-color: #f0f0f0;
+  display: inline-block;
+  width: auto;
+  padding: 5px 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 30px;
+  margin: 5px;
+}
+/* -------------------Last Work---------------------- */
+.last-Work {
+  background-color: #e6e6e6;
+  padding: 40px;
+}
+
+/*--------------- 通用屬性 --------------------------------*/
 img {
   vertical-align: middle;
 }
