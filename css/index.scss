@@ -1,0 +1,65 @@
+header {
+  width: 100%;
+  background-color: aqua;
+  .head {
+    background-image: url(../img/header/HeaderBackgroundImg.jpg);
+    background-size: cover;
+    background-color: #74b2ff;
+
+    .head-img-cover {
+      background-color: rgb(220 220 220 / 60%);
+      padding: 90px 0;
+      text-align: center;
+
+      .img-circle {
+        border: 6px solid #74b2ff;
+        border-radius: 50%;
+        width: 130px;
+        display: block;
+        margin: auto;
+      }
+
+      .head-name {
+        margin: 13px 0px;
+        display: inline-block;
+      }
+
+      .head-email {
+        display: block;
+        font-size: 16px;
+        color: #454545;
+      }
+    }
+  }
+}
+
+.about {
+  .about_right {
+    padding: 30px;
+    h4 {
+      display: inline-block;
+
+      span {
+        border-radius: 30px;
+        padding: 13px 15px;
+      }
+    }
+  }
+}
+
+.last_Work {
+  background-color: #e6e6e6;
+  padding: 60px;
+  text-align: center;
+
+  h3 {
+    padding: 30px 0;
+  }
+
+  .car-main {
+    margin: 20px 0px;
+    .material-symbols-rounded {
+      font-size: 50px;
+    }
+  }
+}
