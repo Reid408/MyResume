@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-tw">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/index2.css" />
+    <!-- Bootstrap CSS v5.2.1 -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -18,20 +24,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
-    <style>
-      .material-symbols-rounded {
-        font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
-        font-size: 55px;
-      }
-    </style>
-    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/index.css" />
-
-    <title>李國一的履歷</title>
   </head>
+
   <body>
-    <div class="header">
+    <header>
       <div class="head">
         <div class="head-img-cover">
           <h1>
@@ -51,19 +52,10 @@
           </h1>
         </div>
       </div>
-      <div id="nav-relative" class="relative">
-        <!-- <nav id="nav" class="head-nav top-0 w-full">
-          <ul>
-            <li><a href="#">首頁</a></li>
-            <li><a href="#">關於</a></li>
-            <li><a href="#">上一份工作</a></li>
-            <li><a href="#">工作經驗</a></li>
-            <li><a href="#">聯絡資訊</a></li>
-          </ul>
-        </nav> -->
-
-        <!-- <nav
-          class="navbar navbar-expand-lg bg-body-tertiary rounded"
+      <div>
+        <nav
+          id="nav_header"
+          class="navbar navbar-expand-lg bg-body-tertiary bg-white"
           aria-label="Twelfth navbar example"
         >
           <div class="container-fluid">
@@ -86,285 +78,250 @@
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"
-                    >Centered nav only</a
+                    >首頁</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-dark" href="#">Link</a>
+                  <a class="nav-link" href="#">關於</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
+                  <a class="nav-link" href="#">上一份工作</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >Dropdown</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">工作經歷</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">聯絡資訊</a>
                 </li>
               </ul>
-            </div>
-          </div>
-        </nav> -->
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
             </div>
           </div>
         </nav>
       </div>
-    </div>
-    <div class="main">
-      <section class="about">
-        <div class="about-Right">
-          <h1>關於我</h1>
-          <div>
-            我平時熱愛自學新技術，將其盡可能應用於工作中，以提高效率和可擴展性。在
-            Kinect
-            音樂遊戲開發過程中，我運用基類和繼承方式，建立了可直接調整屬性和即時調整位置的新節奏物件與生成表，這樣的技術應用提高了工作效率，並實現了更高效的開發流程。
+    </header>
+    <main>
+      <section class="container about_container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <h1>關於我</h1>
+            <div>
+              我平時熱愛自學新技術，將其盡可能應用於工作中，以提高效率和可擴展性。在
+              Kinect
+              音樂遊戲開發過程中，我運用基類和繼承方式，建立了可直接調整屬性和即時調整位置的新節奏物件與生成表，這樣的技術應用提高了工作效率，並實現了更高效的開發流程。
+            </div>
           </div>
-        </div>
-        <div class="about-Left">
-          <div>
-            <span>HTML</span>
-          </div>
-          <div>
-            <span>CSS</span>
-          </div>
-          <div>
-            <span>ASP.NET Core MVC</span>
-          </div>
-          <div>
-            <span>Unity</span>
-          </div>
-          <div>
-            <span>Figma</span>
-          </div>
-          <div>
-            <span>C#</span>
-          </div>
-          <div>
-            <span>MySQL</span>
-          </div>
-          <div>
-            <span>SQL Server</span>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="about_right">
+              <h4><span class="badge bg-secondary">HTML</span></h4>
+              <h4><span class="badge bg-secondary">CSS</span></h4>
+              <h4><span class="badge bg-secondary">ASP.NET Core MVC</span></h4>
+              <h4><span class="badge bg-secondary">Unity</span></h4>
+              <h4><span class="badge bg-secondary">Figma</span></h4>
+              <h4><span class="badge bg-secondary">C#</span></h4>
+              <h4><span class="badge bg-secondary">MySQL</span></h4>
+              <h4><span class="badge bg-secondary">SQL Server</span></h4>
+            </div>
           </div>
         </div>
       </section>
-      <section class="last-Work">
+      <section class="last_Work">
         <div>
           <h1 class="wow animate__animated animate__fadeInUp">上一份工作</h1>
           <br />
           <h3>Unity 軟體工程師</h3>
         </div>
-        <div class="work-content">
-          <div class="work-content-card">
-            <div class="card-main">
-              <div class="card-icon">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
                 <span class="material-symbols-rounded"> view_in_ar </span>
+                <p>AR/VR/MR</p>
+                <div>項目客製化開發與維護</div>
               </div>
-              <div class="card-title">AR/VR/MR</div>
-              <div class="car-content">項目客製化開發與維護</div>
             </div>
-          </div>
-          <div class="work-content-card">
-            <div class="card-main">
-              <div>
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
                 <span class="material-symbols-rounded"> computer </span>
+                <p>PC</p>
+                <div>互動內容客製化開發與維護</div>
               </div>
-              <div class="card-title">PC</div>
-              <div class="car-content">互動內容客製化開發與維護</div>
             </div>
-          </div>
-          <div class="work-content-card">
-            <div class="card-main">
-              <div>
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
                 <span class="material-symbols-rounded"> celebration </span>
+                <p>展場活動</p>
+                <div>應用內容客製化開發與維護</div>
               </div>
-              <div class="card-title">展場活動</div>
-              <div class="car-content">應用內容客製化開發與維護</div>
             </div>
-          </div>
-          <div class="work-content-card">
-            <div class="card-main">
-              <div>
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
                 <span class="material-symbols-rounded"> smartphone </span>
+                <p>手機互動</p>
+                <div>內容客製化開發與維護</div>
               </div>
-              <div class="card-title">手機互動</div>
-              <div class="car-content">內容客製化開發與維護</div>
             </div>
           </div>
         </div>
       </section>
       <section class="work-Experence">
-        <div id="carouselExampleCaptions" class="carousel slide carousel-dark">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner carousel-padding">
-            <div class="carousel-item active">
-              <div class="d-style d-md-block">
-                <h1>酷愛迪數位</h1>
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-style d-md-block">
-                <h1>酷愛位</h1>
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-style d-md-block">
-                <h1>酷愛位</h1>
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
+        <div class="container text-center">
+          <h1>工作經歷</h1>
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide carousel-dark"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner carousel-padding">
+              <div class="carousel-item active">
+                <div class="d-style d-md-block">
+                  <h1>酷愛迪數位創意有限公司</h1>
+                  <h4>軟體工程師</h4>
+                  <h5>2022/8 &nbsp;－&nbsp;2023/5</h5>
+                  <p>
+                    維護公司內部專案內容
+                    <br />公司現有專案項目內容、客戶客製化內容開發
+                    <br />公司現有項目Android、IOS上架
+                    <br />公司新設備與軟體/框架功能測試 <br />IG濾鏡製作
+                    <br />硬體設備功能測試
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-style d-md-block">
+                  <h1>酷愛迪數位創意有限公司</h1>
+                  <h4>軟體工程師助理</h4>
+                  <h5>2022/4 &nbsp;－&nbsp;2022/7</h5>
+                  <p>
+                    確認專案功能內容需求
+                    <br />與團隊配合進行功能撰寫與測試驗收
+                    <br />進行軟體測試與修改 <br />負責軟體之分析、程式撰寫
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-style d-md-block">
+                  <h1>國立臺中科技大學</h1>
+                  <h4>專案助理</h4>
+                  <h5>2021/4 &nbsp;－&nbsp;2022/1</h5>
+                  <p>
+                    專案製作：根據規格書，期間內進行專案內容製作
+                    <br />配合校內護理系進行專案內容測試實驗。
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-style d-md-block">
+                  <h1>和春技術學院</h1>
+                  <h4>專案助理工程師</h4>
+                  <h5>2019/7 &nbsp;－&nbsp;2020/5</h5>
+                  <p>
+                    配合皮鞋店需求，將傳統紙本進銷存POS作業流程進行E化
+                    <br />網站進銷存與POS系統專案項目開發
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </section>
-    </div>
-    <div class="footer"></div>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <!--Boostrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!--Wow.JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       new WOW().init();
 
       addEventListener("scroll", () => {
+        const navHeader = document.getElementById("nav_header");
         if (
-          document.documentElement.scrollTop >=
-          document.getElementsByClassName("header").item(0).scrollHeight
+          document.scrollingElement.scrollTop >
+          document.getElementsByClassName("head").item(0).scrollHeight
         ) {
-          const nav_relative = document.getElementById("nav-relative");
-          nav_relative.classList.add("relative");
-
-          const nav = document.getElementById("nav");
-          nav.classList.add("fixed");
-          nav.classList.add("bg-black");
-          nav.classList.add("text-white");
+          navHeader.classList.add("fixed-top");
+          // navHeader.classList.add("bg-dark");
         } else {
-          const nav_relative = document.getElementById("nav-relative");
-          nav_relative.classList.remove("relative");
-          const nav = document.getElementById("nav");
-          nav.classList.remove("fixed");
-          nav.classList.remove("bg-black");
-          nav.classList.remove("text-white");
+          navHeader.classList.remove("fixed-top");
+          // navHeader.classList.remove("bg-dark");
         }
+      });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
       });
     </script>
   </body>

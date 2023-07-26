@@ -24,6 +24,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/index.css" />
   </head>
 
@@ -84,7 +88,7 @@
                   <a class="nav-link" href="#">上一份工作</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">工作經驗</a>
+                  <a class="nav-link" href="#">工作經歷</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">聯絡資訊</a>
@@ -99,7 +103,7 @@
       <section class="container about_container">
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12">
-            <h1>關於我</h1>
+            <h1 class="fwd">關於我</h1>
             <div>
               我平時熱愛自學新技術，將其盡可能應用於工作中，以提高效率和可擴展性。在
               Kinect
@@ -122,7 +126,9 @@
       </section>
       <section class="last_Work">
         <div>
-          <h1 class="wow animate__animated animate__fadeInUp">上一份工作</h1>
+          <h1 class="wow animate__animated animate__fadeInUp fwd">
+            上一份工作
+          </h1>
           <br />
           <h3>Unity 軟體工程師</h3>
         </div>
@@ -159,95 +165,110 @@
           </div>
         </div>
       </section>
-      <section class="work-Experence">
-        <div id="carouselExampleCaptions" class="carousel slide carousel-dark">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+      <section class="work_Experence">
+        <div class="container text-center">
+          <h1 class="work_Experence_Title fwd">工作經歷</h1>
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h1>酷愛迪數位創意有限公司</h1>
+                  </div>
+                  <div class="col-lg-12">
+                    <h4>軟體工程師</h4>
+                    <h5>2022/8 &nbsp;－&nbsp;2023/5</h5>
+                  </div>
+                  <div class="col-lg-12">
+                    <p>
+                      維護公司內部專案內容
+                      <br />公司現有專案項目內容、客戶客製化內容開發
+                      <br />公司現有項目Android、IOS上架
+                      <br />公司新設備與軟體/框架功能測試 <br />IG濾鏡製作
+                      <br />硬體設備功能測試
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h1>酷愛迪數位創意有限公司</h1>
+                  </div>
+                  <div class="col-lg-12">
+                    <h4>軟體工程師助理</h4>
+                    <h5>2022/4 &nbsp;－&nbsp;2022/7</h5>
+                  </div>
+                  <div class="col-lg-12">
+                    <p>
+                      確認專案功能內容需求
+                      <br />與團隊配合進行功能撰寫與測試驗收
+                      <br />進行軟體測試與修改 <br />負責軟體之分析、程式撰寫
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h1>國立臺中科技大學</h1>
+                  </div>
+                  <div class="col-lg-12">
+                    <h4>專案助理</h4>
+                    <h5>2021/4 &nbsp;－&nbsp;2022/1</h5>
+                  </div>
+                  <div class="col-lg-12">
+                    <p>
+                      根據規格書，期間內進行專案內容製作
+                      <br />配合校內護理系進行專案內容測試實驗
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h1>和春技術學院</h1>
+                  </div>
+                  <div class="col-lg-12">
+                    <h4>專案助理工程師</h4>
+                    <h5>2019/7 &nbsp;－&nbsp;2020/5</h5>
+                  </div>
+                  <div class="col-lg-12">
+                    <p>
+                      配合皮鞋店需求，將傳統紙本進銷存POS作業流程進行E化
+                      <br />網站進銷存與POS系統專案項目開發
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
           </div>
-          <div class="carousel-inner carousel-padding">
-            <div class="carousel-item active">
-              <div class="d-style d-md-block">
-                <h1>酷愛迪數位</h1>
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-style d-md-block">
-                <h1>酷愛位</h1>
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-style d-md-block">
-                <h1>酷愛位</h1>
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </section>
     </main>
-    <footer>
-      <!-- place footer here -->
+
+    <footer class="py-3 my_footer container-fluid">
+      <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
     </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+
+    <!--------------------------Scripts------------------------->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
+    <!--Boostrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <!--Wow.JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <script>
       new WOW().init();
 
@@ -263,6 +284,18 @@
           navHeader.classList.remove("fixed-top");
           // navHeader.classList.remove("bg-dark");
         }
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: false,
+        },
       });
     </script>
   </body>
