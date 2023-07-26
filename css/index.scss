@@ -33,15 +33,17 @@ header {
   }
 }
 
-.about {
-  .about_right {
-    padding: 30px;
-    h4 {
-      display: inline-block;
+main {
+  .about_container {
+    padding: 20px;
+    .row {
+      margin: 40px 0;
+    }
+    .about_right {
+      padding: 20px;
 
-      span {
-        border-radius: 30px;
-        padding: 13px 15px;
+      h4 {
+        display: inline-block;
       }
     }
   }

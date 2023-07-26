@@ -29,15 +29,17 @@ header .head .head-img-cover .head-email {
   color: #454545;
 }
 
-.about .about_right {
-  padding: 30px;
+main .about_container {
+  padding: 20px;
 }
-.about .about_right h4 {
+main .about_container .row {
+  margin: 40px 0;
+}
+main .about_container .about_right {
+  padding: 20px;
+}
+main .about_container .about_right h4 {
   display: inline-block;
-}
-.about .about_right h4 span {
-  border-radius: 30px;
-  padding: 13px 15px;
 }
 
 .last_Work {
