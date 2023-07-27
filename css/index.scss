@@ -49,9 +49,6 @@ main {
   }
 
   .work_Experence {
-    .work_Experence_Title {
-      margin: 40px 0 10px 0;
-    }
     .swiper {
       width: 100%;
       height: 100%;
@@ -75,6 +72,55 @@ main {
       }
     }
   }
+
+  .profile {
+    padding: 20px;
+    margin: 5%;
+    .profile_Card {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.542),
+          rgba(0, 0, 0, 0.542)
+        ),
+        url(../img/profile/Bulky.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.319);
+      border-radius: 10px;
+      color: white;
+      margin: 10px;
+      position: relative;
+    }
+
+    .profile_Card_Two {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.542),
+          rgba(0, 0, 0, 0.542)
+        ),
+        url(../img/profile/ECCO.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.319);
+      border-radius: 10px;
+      color: white;
+      margin: 10px;
+      position: relative;
+    }
+
+    .profile_Position {
+      position: relative;
+      text-align: left;
+      &.profile_Text {
+        top: 35px;
+        left: -10px;
+      }
+    }
+  }
 }
 
 footer {
@@ -85,10 +131,6 @@ footer {
       color: #fff;
     }
   }
-}
-
-.fwd {
-  font-weight: bold;
 }
 
 .last_Work {
@@ -106,4 +148,17 @@ footer {
       font-size: 50px;
     }
   }
+}
+
+.Title {
+  margin: 40px 0 40px 0;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: rgb(187, 187, 187);
 }

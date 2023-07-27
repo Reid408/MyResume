@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-tw">
   <head>
-    <title>Title</title>
+    <title>李國一 履歷表</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -82,16 +82,16 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">關於</a>
+                  <a class="nav-link" href="#about">關於</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">上一份工作</a>
+                  <a class="nav-link" href="#lastWork">上一份工作</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">工作經歷</a>
+                  <a class="nav-link" href="#workExperience">工作經歷</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">聯絡資訊</a>
+                  <a class="nav-link" href="#contentInfo">聯絡資訊</a>
                 </li>
               </ul>
             </div>
@@ -100,7 +100,7 @@
       </div>
     </header>
     <main>
-      <section class="container about_container">
+      <section class="container about_container" id="about">
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12">
             <h1 class="fwd">關於我</h1>
@@ -120,11 +120,12 @@
               <h4><span class="badge bg-secondary">C#</span></h4>
               <h4><span class="badge bg-secondary">MySQL</span></h4>
               <h4><span class="badge bg-secondary">SQL Server</span></h4>
+              <h4><span class="badge bg-secondary">SCSS</span></h4>
             </div>
           </div>
         </div>
       </section>
-      <section class="last_Work">
+      <section class="last_Work" id="lastWork">
         <div>
           <h1 class="wow animate__animated animate__fadeInUp fwd">
             上一份工作
@@ -165,9 +166,9 @@
           </div>
         </div>
       </section>
-      <section class="work_Experence">
+      <section class="work_Experence" id="workExperience">
         <div class="container text-center">
-          <h1 class="work_Experence_Title fwd">工作經歷</h1>
+          <h1 class="Title">工作經歷</h1>
           <!-- Swiper -->
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -248,9 +249,73 @@
           </div>
         </div>
       </section>
+      <section class="profile text-center">
+        <div class="container-md">
+          <h1 class="Title">作品集</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="profile_Card">
+                <div class="profile_Text profile_Position">
+                  <h4>
+                    <a
+                      href="https://bulkyshop.azurewebsites.net/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Bulky Shop</a
+                    >
+                  </h4>
+                  <p>使用ASP.NET &nbsp;Core&nbsp;7&nbsp;MVC &nbsp;開發</p>
+                  <p>專案內容製作</p>
+                  <p>
+                    可以使用管理者帳號登入管理所有資料，以及用戶使用基本電商下訂操作與訂單管理
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="profile_Card_Two">
+                <div class="profile_Text profile_Position">
+                  <h4>
+                    <a
+                      target="_blank"
+                      href="https://drive.google.com/file/d/1smhL8IVBan-4byeJ8TyUCAmXMi4CC0_s/view?usp=share_link"
+                      rel="noopener noreferrer"
+                      >網頁進銷存與 POS 銷售系統-專題</a
+                    >
+                  </h4>
+                  <p>使用ASP.NET &nbsp;Core&nbsp; MVC&nbsp;5 開發</p>
+                  <p>主要負責的開發內容</p>
+                  <ol>
+                    <li>店面資料管理</li>
+                    <li>客戶資料管理</li>
+                    <li>商品資料管理</li>
+                    <li>品牌管理</li>
+                    <li>商品類型管理</li>
+                    <li>商品類別管理</li>
+                    <li>客戶訂貨處理</li>
+                    <li>客戶出貨處理</li>
+                    <li>進貨處理</li>
+                    <li>銷售報表</li>
+                    <li>店櫃銷售作業(POS)</li>
+                    <li>POS資料紀錄</li>
+                    <li>POS 銷售資料紀錄刪除作業</li>
+                    <li>共同製作與設計首頁</li>
+                    <li>更換套板與調整色系</li>
+                    <li>SQL規劃</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="py-3 my_footer container-fluid">
+      <div class="row container-md">
+        <div class="col-6">信箱 c698746@gmail.com</div>
+        <div class="col-6">電話 0965121307</div>
+      </div>
       <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
     </footer>
 
