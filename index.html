@@ -47,7 +47,9 @@
             >
             <span
               class="head-email animate__animated animate__fadeInUp animate__delay-2s"
-              >c698746@gmail.com</span
+              >c698746@gmail.com <br />
+              <br />
+              2000-4-8</span
             >
           </h1>
         </div>
@@ -55,7 +57,7 @@
       <div>
         <nav
           id="nav_header"
-          class="navbar navbar-expand-lg bg-body-tertiary bg-white"
+          class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-white"
           aria-label="Twelfth navbar example"
         >
           <div class="container-fluid">
@@ -82,16 +84,38 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">關於</a>
+                  <a class="nav-link active" aria-current="page" href="#about"
+                    >關於</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#lastWork">上一份工作</a>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#lastWork"
+                    >上一份工作</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#workExperience">工作經歷</a>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#workExperience"
+                    >工作經歷</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contentInfo">聯絡資訊</a>
+                  <a class="nav-link active" aria-current="page" href="#profile"
+                    >作品集</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#contentInfo"
+                    >聯絡資訊</a
+                  >
                 </li>
               </ul>
             </div>
@@ -123,9 +147,34 @@
               <h4><span class="badge bg-secondary">SCSS</span></h4>
             </div>
           </div>
+
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-3 col-md-6" id="degreeAnimation">
+                <span class="material-symbols-rounded"> school </span>
+                <h3>學歷</h3>
+                <p>臺中科技大學-學士</p>
+              </div>
+              <div class="col-lg-3 col-md-6" id="driveAnimation">
+                <span class="material-symbols-rounded"> motorcycle </span>
+                <h3>駕照</h3>
+                <p>普通重型機車駕照、普通小型車駕照</p>
+              </div>
+              <div class="col-lg-3 col-md-6" id="addressAnimation">
+                <span class="material-symbols-rounded"> home </span>
+                <h3>住處</h3>
+                <p>高雄市小港區小港路***</p>
+              </div>
+              <div class="col-lg-3 col-md-6" id="interestAnimation">
+                <span class="material-symbols-rounded"> interests </span>
+                <h3>興趣</h3>
+                <p>研究、探索、實驗、測試、拍照、社交</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="last_Work" id="lastWork">
+      <section class="last_Work container-fluid" id="lastWork">
         <div>
           <h1 class="wow animate__animated animate__fadeInUp fwd">
             上一份工作
@@ -167,6 +216,7 @@
         </div>
       </section>
       <section class="work_Experence" id="workExperience">
+        <!-- <div class="work_Exp_top"></div> -->
         <div class="container text-center">
           <h1 class="Title">工作經歷</h1>
           <!-- Swiper -->
@@ -249,9 +299,9 @@
           </div>
         </div>
       </section>
-      <section class="profile text-center">
+      <section class="profile text-center" id="profile">
+        <h1 class="profile_Title">作品集</h1>
         <div class="container-md">
-          <h1 class="Title">作品集</h1>
           <div class="row">
             <div class="col-lg-6">
               <div class="col-12">
@@ -305,7 +355,9 @@
                     >
                   </h4>
                   <p>使用ASP.NET &nbsp;Core&nbsp; MVC&nbsp;5 開發</p>
-                  <p>主要負責的開發內容</p>
+                  <p>
+                    主要負責的開發內容(故專案與他人協作與其他因素，僅能提供專題文件)
+                  </p>
                   <ol>
                     <li>店面資料管理</li>
                     <li>客戶資料管理</li>
@@ -332,12 +384,18 @@
       </section>
     </main>
 
-    <footer class="py-3 my_footer container-fluid">
-      <div class="row container-md">
-        <div class="col-6">信箱 c698746@gmail.com</div>
-        <div class="col-6">電話 0965121307</div>
+    <footer id="contentInfo" class="py-3 my_footer container-fluid">
+      <div class="footer_content">
+        <div class="footer_text">
+          <span class="material-symbols-rounded"> call </span>
+          ：c698746@gmail.com
+        </div>
+        <div class="footer_text">
+          <span class="material-symbols-rounded"> mail </span>： 0965121307
+        </div>
       </div>
-      <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+      <br />
+      <p class="text-center text-body-secondary">© 2023</p>
     </footer>
 
     <!--------------------------Scripts------------------------->
@@ -357,20 +415,6 @@
 
     <script>
       new WOW().init();
-
-      addEventListener("scroll", () => {
-        const navHeader = document.getElementById("nav_header");
-        if (
-          document.scrollingElement.scrollTop >
-          document.getElementsByClassName("head").item(0).scrollHeight
-        ) {
-          navHeader.classList.add("fixed-top");
-          // navHeader.classList.add("bg-dark");
-        } else {
-          navHeader.classList.remove("fixed-top");
-          // navHeader.classList.remove("bg-dark");
-        }
-      });
     </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -382,6 +426,59 @@
           el: ".swiper-scrollbar",
           hide: false,
         },
+      });
+    </script>
+
+    <script>
+      let interestAnimation = document.getElementById("interestAnimation");
+      let degreeAnimation = document.getElementById("degreeAnimation");
+      let driveAnimation = document.getElementById("driveAnimation");
+      let addressAnimation = document.getElementById("addressAnimation");
+      interestAnimation.addEventListener("mouseenter", () => {
+        interestAnimation.classList.add(
+          "animate__animated",
+          "animate__flipInY"
+        );
+      });
+
+      interestAnimation.addEventListener("mouseover", () => {
+        interestAnimation.classList.remove(
+          "animate__animated",
+          "animate__flipInY"
+        );
+      });
+
+      degreeAnimation.addEventListener("mouseenter", () => {
+        degreeAnimation.classList.add("animate__animated", "animate__flipInY");
+      });
+
+      degreeAnimation.addEventListener("mouseover", () => {
+        degreeAnimation.classList.remove(
+          "animate__animated",
+          "animate__flipInY"
+        );
+      });
+
+      addressAnimation.addEventListener("mouseenter", () => {
+        addressAnimation.classList.add("animate__animated", "animate__flipInY");
+      });
+
+      addressAnimation.addEventListener("mouseover", () => {
+        addressAnimation.classList.remove(
+          "animate__animated",
+          "animate__flipInY"
+        );
+      });
+
+      driveAnimation.addEventListener("mouseenter", () => {
+        driveAnimation.classList.add("animate__animated", "animate__flipInY");
+      });
+
+      driveAnimation.addEventListener("mouseover", () => {
+        driveAnimation.classList.remove(
+          "animate__animated",
+          "animate__flipInY"
+        );
       });
     </script>
   </body>
