@@ -118,7 +118,7 @@ main .profile .profile_Card_Two {
   border: 1px solid rgba(255, 255, 255, 0.319);
   border-radius: 10px;
   color: white;
-  margin: 30px 0 0 0;
+  margin: 30px 0;
   position: relative;
   display: block;
 }
@@ -163,7 +163,7 @@ footer.my_footer {
 }
 footer.my_footer .footer_content {
   color: white;
-  width: 40%;
+  width: 50%;
   margin: auto;
   display: flex;
   justify-content: center;
