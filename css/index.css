@@ -28,11 +28,6 @@ header .head .head-img-cover .head-email {
   font-size: 16px;
   color: #454545;
 }
-header .nav_main_title {
-  position: absolute;
-  right: 5%;
-  top: 35%;
-}
 
 main .about_container {
   padding: 20px;
@@ -242,6 +237,12 @@ a {
 
 a:hover {
   color: rgb(187, 187, 187);
+}
+
+.nav_main_title {
+  position: absolute;
+  right: 5%;
+  top: 35%;
 }
 
 .animate__delay-0_4 {
