@@ -31,6 +31,12 @@ header {
       }
     }
   }
+
+  .nav_main_title {
+    position: absolute;
+    right: 5%;
+    top: 35%;
+  }
 }
 
 main {
@@ -69,11 +75,6 @@ main {
     padding: 60px 0;
     .work_Exp_top {
       margin: 50px 0;
-    }
-
-    .Title {
-      margin-bottom: 40px;
-      font-weight: bold;
     }
 
     .swiper {
@@ -190,6 +191,70 @@ main {
       }
     }
   }
+
+  .news {
+    .newsTitle {
+      margin: 40px 0;
+    }
+    > .row {
+      margin: auto;
+      > div {
+        .new-card {
+          border-radius: 10px;
+          overflow: hidden;
+          border-radius: 10px;
+          box-shadow: 3px 5px 14px 8px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          text-align: initial;
+          margin: 20px 0;
+          .new-card-img {
+            width: 100%;
+            display: inline-block;
+            height: 195px;
+            > img {
+              background-position: center;
+              background-size: cover;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .new-card-content {
+            border-top: 10px solid #94bbeb;
+            padding: 20px;
+            height: 280px;
+            // position: relative;
+            .new-card-title {
+              > a {
+                color: white;
+                padding: 4px 12px;
+                background-color: #d01a48;
+                display: inline-block;
+                margin: 15px 0;
+                border-radius: 5px;
+                font-weight: bold;
+              }
+            }
+            > h3 {
+              font-size: 22px;
+              font-weight: bold;
+              > a {
+                color: black;
+              }
+            }
+            > p {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+
+    > .newsTop {
+      margin: 20px auto;
+    }
+  }
 }
 
 footer {
@@ -225,4 +290,77 @@ a {
 }
 a:hover {
   color: rgb(187, 187, 187);
+}
+
+.animate__delay-0_4 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.animate__delay-0_5 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.animate__delay-0_6 {
+  -webkit-animation-delay: 0.6;
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.animate__delay-0_7 {
+  -webkit-animation-delay: 0.7;
+  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.animate__delay-0_8 {
+  -webkit-animation-delay: 0.8;
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.Title {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 98%;
+    .col-lg-3 {
+      .new-card {
+        margin-bottom: 25px;
+        .new-card-img {
+          height: 210px !important;
+        }
+        .new-card-content {
+          height: 250px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 98%;
+    .col-lg-3 {
+      .new-card {
+        margin-bottom: 25px;
+        .new-card-img {
+          height: 220px !important;
+        }
+        .new-card-content {
+          height: 250px !important;
+        }
+      }
+    }
+  }
 }

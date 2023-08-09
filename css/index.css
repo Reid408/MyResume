@@ -28,6 +28,11 @@ header .head .head-img-cover .head-email {
   font-size: 16px;
   color: #454545;
 }
+header .nav_main_title {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
 
 main .about_container {
   padding: 20px;
@@ -60,10 +65,6 @@ main .work_Experence {
 }
 main .work_Experence .work_Exp_top {
   margin: 50px 0;
-}
-main .work_Experence .Title {
-  margin-bottom: 40px;
-  font-weight: bold;
 }
 main .work_Experence .swiper {
   width: 100%;
@@ -156,6 +157,61 @@ main .profile .profile_Position_Right.profile_Text {
   top: 15px;
   left: -10px;
 }
+main .news .newsTitle {
+  margin: 40px 0;
+}
+main .news > .row {
+  margin: auto;
+}
+main .news > .row > div .new-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 3px 5px 14px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: initial;
+  margin: 20px 0;
+}
+main .news > .row > div .new-card .new-card-img {
+  width: 100%;
+  display: inline-block;
+  height: 195px;
+}
+main .news > .row > div .new-card .new-card-img > img {
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+main .news > .row > div .new-card .new-card-content {
+  border-top: 10px solid #94bbeb;
+  padding: 20px;
+  height: 280px;
+}
+main .news > .row > div .new-card .new-card-content .new-card-title > a {
+  color: white;
+  padding: 4px 12px;
+  background-color: #d01a48;
+  display: inline-block;
+  margin: 15px 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+main .news > .row > div .new-card .new-card-content > h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+main .news > .row > div .new-card .new-card-content > h3 > a {
+  color: black;
+}
+main .news > .row > div .new-card .new-card-content > p {
+  display: inline-block;
+}
+main .news > .newsTop {
+  margin: 20px auto;
+}
 
 footer.my_footer {
   background-color: #747474;
@@ -186,4 +242,63 @@ a {
 
 a:hover {
   color: rgb(187, 187, 187);
+}
+
+.animate__delay-0_4 {
+  animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.animate__delay-0_5 {
+  animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.animate__delay-0_6 {
+  animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.animate__delay-0_7 {
+  animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.animate__delay-0_8 {
+  animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.Title {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 98%;
+  }
+  .container .col-lg-3 .new-card {
+    margin-bottom: 25px;
+  }
+  .container .col-lg-3 .new-card .new-card-img {
+    height: 210px !important;
+  }
+  .container .col-lg-3 .new-card .new-card-content {
+    height: 250px !important;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 98%;
+  }
+  .container .col-lg-3 .new-card {
+    margin-bottom: 25px;
+  }
+  .container .col-lg-3 .new-card .new-card-img {
+    height: 220px !important;
+  }
+  .container .col-lg-3 .new-card .new-card-content {
+    height: 250px !important;
+  }
 }/*# sourceMappingURL=index.css.map */

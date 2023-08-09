@@ -42,15 +42,15 @@
               alt=""
             />
             <span
-              class="head-name animate__animated animate__fadeInUp animate__delay-1s"
+              class="head-name animate__animated animate__fadeInUp animate__delay-0_5"
               >李國一</span
             >
             <span
-              class="head-email animate__animated animate__fadeInUp animate__delay-2s"
-              >c698746@gmail.com <br />
-              <br />
-              2000-4-8</span
+              class="head-email animate__animated animate__fadeInUp animate__delay-0_8"
             >
+              <p>c698746@gmail.com</p>
+              <p>2000-4-8</p>
+            </span>
           </h1>
         </div>
       </div>
@@ -60,6 +60,7 @@
           class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-white"
           aria-label="Twelfth navbar example"
         >
+          <p class="nav_main_title">李國一的履歷</p>
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -86,14 +87,6 @@
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#about"
                     >關於</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#lastWork"
-                    >上一份工作</a
                   >
                 </li>
                 <li class="nav-item">
@@ -147,25 +140,32 @@
               <h4><span class="badge bg-secondary">SCSS</span></h4>
             </div>
           </div>
-
           <div class="col-lg-12">
             <div class="row">
-              <div class="col-lg-3 col-md-6" id="degreeAnimation">
+              <div
+                class="wow col-lg-3 col-md-6 animate__animated animate__fadeInUp animate__delay-0_4"
+              >
                 <span class="material-symbols-rounded"> school </span>
                 <h3>學歷</h3>
                 <p>臺中科技大學-學士</p>
               </div>
-              <div class="col-lg-3 col-md-6" id="driveAnimation">
+              <div
+                class="wow col-lg-3 col-md-6 animate__animated animate__fadeInUp animate__delay-0_5"
+              >
                 <span class="material-symbols-rounded"> motorcycle </span>
                 <h3>駕照</h3>
                 <p>普通重型機車駕照、普通小型車駕照</p>
               </div>
-              <div class="col-lg-3 col-md-6" id="addressAnimation">
+              <div
+                class="wow col-lg-3 col-md-6 animate__animated animate__fadeInUp animate__delay-0_6"
+              >
                 <span class="material-symbols-rounded"> home </span>
                 <h3>住處</h3>
                 <p>高雄市小港區小港路***</p>
               </div>
-              <div class="col-lg-3 col-md-6" id="interestAnimation">
+              <div
+                class="wow col-lg-3 col-md-6 animate__animated animate__fadeInUp animate__delay-0_7"
+              >
                 <span class="material-symbols-rounded"> interests </span>
                 <h3>興趣</h3>
                 <p>研究、探索、實驗、測試、拍照、社交</p>
@@ -174,49 +174,7 @@
           </div>
         </div>
       </section>
-      <section class="last_Work container-fluid" id="lastWork">
-        <div>
-          <h1 class="wow animate__animated animate__fadeInUp fwd">
-            上一份工作
-          </h1>
-          <br />
-          <h3>Unity 軟體工程師</h3>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> view_in_ar </span>
-                <p>AR/VR/MR</p>
-                <div>項目客製化開發與維護</div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> computer </span>
-                <p>PC</p>
-                <div>互動內容客製化開發與維護</div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> celebration </span>
-                <p>展場活動</p>
-                <div>應用內容客製化開發與維護</div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> smartphone </span>
-                <p>手機互動</p>
-                <div>內容客製化開發與維護</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="work_Experence" id="workExperience">
-        <!-- <div class="work_Exp_top"></div> -->
         <div class="container text-center">
           <h1 class="Title">工作經歷</h1>
           <!-- Swiper -->
@@ -295,12 +253,89 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
             <div class="swiper-scrollbar"></div>
           </div>
         </div>
       </section>
+      <section class="last_Work container-fluid">
+        <div>
+          <h1 class="wow animate__animated animate__fadeInUp fwd Title">
+            核心技能
+          </h1>
+        </div>
+        <br />
+        <h4>網站開發</h4>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
+                <span class="material-symbols-rounded"> web </span>
+                <p>ASP.NET core 7 MVC</p>
+                <div>可製作相關ASP.NET Core專案</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
+                <span class="material-symbols-rounded"> database </span>
+                <p>MSSQL</p>
+                <div>配合網站創建並進行CRUD</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
+                <span class="material-symbols-rounded"> css </span>
+                <p>SCSS</p>
+                <div>可結構化進行編寫CSS</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
+                <span class="material-symbols-rounded"> repeat_one </span>
+                <p>Git</p>
+                <div>可讓專案進行版本控制</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>Unity 軟體工程師</h4>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
+                <span class="material-symbols-rounded"> view_in_ar </span>
+                <p>AR/VR/MR</p>
+                <div>項目客製化開發與維護</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
+                <span class="material-symbols-rounded"> computer </span>
+                <p>PC</p>
+                <div>互動內容客製化開發與維護</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
+                <span class="material-symbols-rounded"> celebration </span>
+                <p>展場活動</p>
+                <div>應用內容客製化開發與維護</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
+              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
+                <span class="material-symbols-rounded"> smartphone </span>
+                <p>手機互動</p>
+                <div>內容客製化開發與維護</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="profile text-center" id="profile">
-        <h1 class="profile_Title">作品集</h1>
+        <h1 class="profile_Title Title">作品集</h1>
+        <h2 class="Title">網頁相關</h2>
         <div class="container-md">
           <div class="row">
             <div class="col-lg-6">
@@ -371,6 +406,81 @@
             </div>
           </div>
         </div>
+
+        <div class="news">
+          <h2 class="newsTitle">Unity -含(C#) 相關</h2>
+          <div class="row container newsTop">
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="new-card">
+                <a href="#" class="new-card-img">
+                  <img src="img/profile/金屬工業.jpg" alt="" />
+                </a>
+                <div class="new-card-content">
+                  <div class="new-card-title">
+                    <a href="#">獨立開發</a>
+                    <p class="card-date">八月 9, 2023</p>
+                  </div>
+                  <h3>
+                    <a href="">金屬工業-光學輔助調模AR導引系統</a>
+                  </h3>
+                  <p>誠摯地邀請各位家長一同共襄盛舉</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="new-card">
+                <a href="#" class="new-card-img">
+                  <img src="img/profile/MOBA.jpg" alt="" />
+                </a>
+                <div class="new-card-content">
+                  <div class="new-card-title">
+                    <a href="#">獨立製作</a>
+                    <p class="card-date">八月 9, 2023</p>
+                  </div>
+                  <h3>
+                    <a href="">MOBA項目網路連線實作</a>
+                  </h3>
+                  <p>都會品味的最佳選擇</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="new-card">
+                <a href="#" class="new-card-img">
+                  <img src="img/profile/抽卡.jpg" alt="" />
+                </a>
+                <div class="new-card-content">
+                  <div class="new-card-title">
+                    <a href="#">獨立開發</a>
+                    <p class="card-date">八月 9, 2023</p>
+                  </div>
+
+                  <h3>
+                    <a href="">活動展場NFT抽卡遊戲</a>
+                  </h3>
+                  <p>被疫情的搗亂而耽誤長達4年的YAMAHA音樂嘉年華，即將登場!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="new-card">
+                <a href="#" class="new-card-img">
+                  <img src="img/profile/WebGL.jpg" alt="" />
+                </a>
+                <div class="new-card-content">
+                  <div class="new-card-title">
+                    <a href="#">獨立開發</a>
+                    <p class="card-date">八月 9, 2023</p>
+                  </div>
+                  <h3>
+                    <a href="">金屬工業-光學輔助調模AR導引系統座</a>
+                  </h3>
+                  <p>《薩克斯風很簡單》系列音樂講座</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -416,59 +526,10 @@
           el: ".swiper-scrollbar",
           hide: false,
         },
-      });
-    </script>
-
-    <script>
-      let interestAnimation = document.getElementById("interestAnimation");
-      let degreeAnimation = document.getElementById("degreeAnimation");
-      let driveAnimation = document.getElementById("driveAnimation");
-      let addressAnimation = document.getElementById("addressAnimation");
-      interestAnimation.addEventListener("mouseenter", () => {
-        interestAnimation.classList.add(
-          "animate__animated",
-          "animate__flipInY"
-        );
-      });
-
-      interestAnimation.addEventListener("mouseover", () => {
-        interestAnimation.classList.remove(
-          "animate__animated",
-          "animate__flipInY"
-        );
-      });
-
-      degreeAnimation.addEventListener("mouseenter", () => {
-        degreeAnimation.classList.add("animate__animated", "animate__flipInY");
-      });
-
-      degreeAnimation.addEventListener("mouseover", () => {
-        degreeAnimation.classList.remove(
-          "animate__animated",
-          "animate__flipInY"
-        );
-      });
-
-      addressAnimation.addEventListener("mouseenter", () => {
-        addressAnimation.classList.add("animate__animated", "animate__flipInY");
-      });
-
-      addressAnimation.addEventListener("mouseover", () => {
-        addressAnimation.classList.remove(
-          "animate__animated",
-          "animate__flipInY"
-        );
-      });
-
-      driveAnimation.addEventListener("mouseenter", () => {
-        driveAnimation.classList.add("animate__animated", "animate__flipInY");
-      });
-
-      driveAnimation.addEventListener("mouseover", () => {
-        driveAnimation.classList.remove(
-          "animate__animated",
-          "animate__flipInY"
-        );
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
     </script>
   </body>
