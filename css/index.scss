@@ -251,6 +251,7 @@ main {
     > .row {
       margin: auto;
       > div {
+        padding: 20px 10px;
         .new-card {
           border-radius: 10px;
           overflow: hidden;
@@ -258,7 +259,7 @@ main {
           box-shadow: 3px 5px 14px 8px rgba(0, 0, 0, 0.1);
           overflow: hidden;
           text-align: initial;
-          margin: 20px 0;
+          height: 100%;
           .new-card-img {
             width: 100%;
             display: inline-block;
@@ -275,8 +276,7 @@ main {
           .new-card-content {
             border-top: 10px solid #94bbeb;
             padding: 20px;
-            height: 280px;
-            // position: relative;
+            display: inline-block;
             .new-card-title {
               > a {
                 color: white;
