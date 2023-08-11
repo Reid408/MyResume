@@ -136,7 +136,7 @@ main .profile .new_web_Title_profile {
   margin: 20px 0;
 }
 main .profile .new_web_Title_profile .profile_Card {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.542), rgba(0, 0, 0, 0.542)), url(../img/profile/Bulky.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/profile/Bulky.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -153,11 +153,11 @@ main .profile .new_web_Title_profile .profile_Card:hover {
   color: #bdbdbd;
 }
 main .profile .new_web_Title_profile .profile_Card_Two {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.542), rgba(0, 0, 0, 0.542)), url(../img/profile/KHS.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/profile/KHS.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 88px 40px;
+  padding: 40px;
   border: 1px solid rgba(255, 255, 255, 0.319);
   border-radius: 10px;
   color: white;
@@ -170,7 +170,7 @@ main .profile .new_web_Title_profile .profile_Card_Two:hover {
   color: #bdbdbd;
 }
 main .profile .new_web_Title_profile .profile_Card_Three {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.542), rgba(0, 0, 0, 0.542)), url(../img/profile/ECCO.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/profile/ECCO.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
