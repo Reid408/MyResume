@@ -114,7 +114,7 @@
       <section class="container about_container" id="about">
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12">
-            <h1 class="fwd">關於我</h1>
+            <h1 class="Title">關於我</h1>
             <div>
               我平時熱愛自學新技術，將其盡可能應用於工作中，以提高效率和可擴展性。在
               Kinect
@@ -278,72 +278,7 @@
           </div>
         </div>
       </section>
-      <section class="last_Work container-fluid" id="last_Work">
-        <div>
-          <h1 class="wow animate__animated animate__fadeInUp fwd Title">
-            核心技能
-          </h1>
-        </div>
-        <br />
-        <h4>網站開發</h4>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> web </span>
-                <p>ASP.NET core 7 MVC</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> database </span>
-                <p>MSSQL</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> css </span>
-                <p>SCSS</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> repeat_one </span>
-                <p>Git</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h4 class="core_skill_unity">Unity(C#)</h4>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> view_in_ar </span>
-                <p>AR/VR/MR</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> computer </span>
-                <p>PC軟體客製化開發</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> celebration </span>
-                <p>展場數位應用內容客製化開發</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 car-main">
-              <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-white">
-                <span class="material-symbols-rounded"> smartphone </span>
-                <p>手機數位互動應用內容客製化開發</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <!-- 作品集 -->
       <section class="profile text-center" id="profile">
         <h1 class="profile_Title Title">作品集</h1>
@@ -364,8 +299,13 @@
                   </h4>
                   <p>應用工具與技能：ASP.NET Core 7 MVC、C#、MSSQL、Azure</p>
                   <p>
+                    (因為使用Azure免費的應用程式服務，request時間有時會有些延遲。臉書登入功能在開發功能設定階段，僅能邀請或本人帳戶做功能測試)
+                  </p>
+                  <p>
                     解決購物車緩存問題，並成功使用臉書快速註冊和藍新金流的線上刷卡功能。實現郵件驗證功能，確保註冊和更改密碼的安全性。
                   </p>
+                  <p>管理者帳密：Admin / Admin123*</p>
+                  <p>藍新金流測試信用卡號：4000-2211-1111-1111</p>
                 </div>
               </a>
             </div>
@@ -425,7 +365,7 @@
         <div class="news">
           <h4 class="newsTitle">Unity -含(C#) 相關</h4>
           <div class="row container newsTop">
-            <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="col-xl-4 col-lg-6 col-md-6">
               <div class="new-card">
                 <a
                   href="https://www.youtube.com/watch?v=-2BafsOkVW4&feature=youtu.be"
@@ -433,7 +373,14 @@
                   rel="noopener noreferrer"
                   class="new-card-img"
                 >
-                  <img src="img/profile/金屬工業.jpg" alt="" />
+                  <iframe
+                    class="video"
+                    src="https://www.youtube.com/embed/-2BafsOkVW4"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </a>
                 <div class="new-card-content">
                   <div class="new-card-title">
@@ -445,19 +392,22 @@
                       href="https://www.youtube.com/watch?v=-2BafsOkVW4&feature=youtu.be"
                       target="_blank"
                       rel="noopener noreferrer"
-                      >金屬工業-光學輔助調模AR導引系統</a
+                      >金屬工業-光學輔助調模AR導引系統<span
+                        class="material-symbols-rounded"
+                      >
+                        open_in_new
+                      </span></a
                     >
                   </h3>
                   <p>使用技術：C#、MRTK、Vuforia、Docker、Unity</p>
                   <p>
-                    從中自學基礎 Docker 技術，從而配合金屬工業光檢機軟體與
-                    Docker 程式，成功結合 AR 並與解決資料對接問題，並獨立開發 AR
-                    調模引導系統。
+                    與金屬工業光檢機軟體結合 Docker 網站伺服器做資料對接。 使用
+                    Hololens 與 Vuforia 獨立開發 AR 調模引導系統。
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="col-xl-4 col-lg-6 col-md-6">
               <div class="new-card">
                 <a
                   href="https://youtu.be/buEwZOjDSO0"
@@ -465,7 +415,14 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="img/profile/MOBA.jpg" alt="" />
+                  <iframe
+                    class="video"
+                    src="https://www.youtube.com/embed/buEwZOjDSO0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </a>
                 <div class="new-card-content">
                   <div class="new-card-title">
@@ -474,19 +431,23 @@
                   </div>
                   <h3>
                     <a href="https://youtu.be/buEwZOjDSO0"
-                      >MOBA項目網路連線實作</a
+                      >MOBA網路連線實作-個人<span
+                        class="material-symbols-rounded"
+                      >
+                        open_in_new
+                      </span></a
                     >
                   </h3>
                   <p>使用技術：C#、Unity</p>
                   <p>
-                    從中學習 C# Socket 使用，編寫 Moba Server-Client 端以 TCP
-                    協定與 Protobuf
+                    使用 C# Socket ，編寫 Moba Server-Client 端以 TCP 協定與
+                    Protobuf
                     進行封包與解封包傳遞。實現大廳、區配、聊天與戰鬥系統。
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="col-xl-4 col-lg-6 col-md-6">
               <div class="new-card">
                 <a
                   href="https://www.youtube.com/watch?v=VaPFN1eJvRs"
@@ -494,7 +455,14 @@
                   rel="noopener noreferrer"
                   class="new-card-img"
                 >
-                  <img src="img/profile/抽卡.jpg" alt="" />
+                  <iframe
+                    class="video"
+                    src="https://www.youtube.com/embed/VaPFN1eJvRs?start=2"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </a>
                 <div class="new-card-content">
                   <div class="new-card-title">
@@ -507,7 +475,11 @@
                       href="https://www.youtube.com/watch?v=VaPFN1eJvRs"
                       target="_blank"
                       rel="noopener noreferrer"
-                      >活動展場NFT抽卡遊戲</a
+                      >活動展場NFT抽卡遊戲<span
+                        class="material-symbols-rounded"
+                      >
+                        open_in_new
+                      </span></a
                     >
                   </h3>
                   <p>使用技術：C#、MySQL、PHP、Unity</p>
@@ -518,7 +490,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="col-xl-4 col-lg-6 col-md-6">
               <div class="new-card">
                 <a
                   href="https://www.youtube.com/watch?v=R3ve2y9lv0w"
@@ -526,7 +498,14 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="img/profile/WebGL.jpg" alt="" />
+                  <iframe
+                    class="video"
+                    src="https://www.youtube.com/embed/R3ve2y9lv0w"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </a>
                 <div class="new-card-content">
                   <div class="new-card-title">
@@ -538,7 +517,11 @@
                       href="https://www.youtube.com/watch?v=R3ve2y9lv0w"
                       target="_blank"
                       rel="noopener noreferrer"
-                      >商研院 WebGL接金幣遊戲</a
+                      >商研院 WebGL接金幣遊戲<span
+                        class="material-symbols-rounded"
+                      >
+                        open_in_new
+                      </span></a
                     >
                   </h3>
                   <p>使用技術：JavaScript、C#、Unity、CSS、HTML</p>

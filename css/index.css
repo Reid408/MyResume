@@ -121,6 +121,7 @@ main .work_Experence .swiper .swiper-slide .swiper-slide img {
 main .work_Experence .swiper .swiper-slide .lastWorkContent {
   width: 70%;
   margin: auto;
+  text-align: left;
 }
 main .profile {
   padding: 20px 20px;
@@ -224,17 +225,13 @@ main .news > .row > div .new-card .new-card-img {
   display: inline-block;
   height: 195px;
 }
-main .news > .row > div .new-card .new-card-img > img {
-  background-position: center;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
+main .news > .row > div .new-card .new-card-img .video {
   width: 100%;
   height: 100%;
+  border-bottom: 10px solid #74b2ff;
 }
 main .news > .row > div .new-card .new-card-content {
-  border-top: 10px solid #94bbeb;
-  padding: 20px;
+  padding: 10px 30px 20px 30px;
   display: inline-block;
 }
 main .news > .row > div .new-card .new-card-content .new-card-title > a {
