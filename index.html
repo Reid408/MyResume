@@ -126,7 +126,9 @@
             <div class="about_right">
               <h4><span class="badge bg-secondary">HTML</span></h4>
               <h4><span class="badge bg-secondary">CSS</span></h4>
-              <h4><span class="badge bg-secondary">ASP.NET Core MVC</span></h4>
+              <h4>
+                <span class="badge bg-secondary">ASP.NET Core 7 MVC</span>
+              </h4>
               <h4><span class="badge bg-secondary">ASP.NET MVC 5</span></h4>
               <h4><span class="badge bg-secondary">Unity</span></h4>
               <h4><span class="badge bg-secondary">Figma</span></h4>
@@ -304,9 +306,18 @@
                   <p>
                     (因為使用Azure免費的應用程式服務，request時間有時會有些延遲。臉書登入功能在開發功能設定階段，僅能邀請或本人帳戶做功能測試)
                   </p>
-                  <p>
-                    解決購物車緩存問題，並成功使用臉書快速註冊和藍新金流的線上刷卡功能。實現郵件驗證功能，確保註冊和更改密碼的安全性。
-                  </p>
+                  功能實現：
+                  <ul>
+                    <li>SMTP Client 及 MimeKit 實現密碼修改、註冊信箱確認</li>
+                    <li>ASP.Net Identity 進行身分驗證、區分、使用</li>
+                    <li>與 MSSQL 連線資料，使用 Migration 建立與更新資料庫</li>
+                    <li>使用DataTable呈現基本資料管理</li>
+                    <li>將專案發布至Azure App應用與使用Azure Database</li>
+                    <li>AspNetCore Facebook認證Nuget套件進行臉書快速登入</li>
+                    <li>AddSession註冊會話服務，進行緩存購物車數量</li>
+                    <li>藍新金流訂單刷卡功能</li>
+                  </ul>
+
                   <p>管理者帳密：Admin / Admin123*</p>
                   <p>藍新金流測試信用卡號：4000-2211-1111-1111</p>
                 </div>
@@ -345,8 +356,9 @@
                     <span class="material-symbols-rounded"> open_in_new </span>
                   </h4>
                   <p>
-                    應用技能：ASP.NET &nbsp;MVC&nbsp;5
-                    開發(故專案與他人協作與其他因素，僅能提供專題文件)
+                    應用技能：ASP.NET MVC 5
+                    開發、Ajax、JS、Datatable、Dapper開發
+                    (故專案與他人協作與其他因素，僅能提供專題文件)
                   </p>
                   <p>主要負責的開發內容：</p>
                   <p>
@@ -356,8 +368,10 @@
                   </p>
                   <p>專案貢獻：</p>
                   <p>
-                    從中定義Sqlconnection連接資料庫，選寫Ajax進行後端請求SQL語法CRUD。透過Datatable做主資料呈現。
-                    接收並參考客戶所提供POS系統作業畫面，研究進銷存流程並將其復刻實現。
+                    前端選寫Ajax 與事件func，後端利用Dapper Query
+                    對資料庫CRUD。透過Datatable做主資料呈現。
+                    根據進銷存系統從而修改SQL
+                    Table規劃。對網頁樣式和內容進行修改與設計。
                   </p>
                 </div>
               </a>
@@ -380,7 +394,6 @@
                     class="video"
                     src="https://www.youtube.com/embed/-2BafsOkVW4"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
                   ></iframe>
@@ -422,7 +435,6 @@
                     class="video"
                     src="https://www.youtube.com/embed/buEwZOjDSO0"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
                   ></iframe>
@@ -462,7 +474,6 @@
                     class="video"
                     src="https://www.youtube.com/embed/VaPFN1eJvRs?start=2"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
                   ></iframe>
@@ -505,7 +516,6 @@
                     class="video"
                     src="https://www.youtube.com/embed/R3ve2y9lv0w"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
                   ></iframe>
